@@ -1,0 +1,13 @@
+*.iml
+*.DS_Store*
+.idea
+target
+.classpath
+.project
+.settings/
+/test-report.xml
+node_modules
+package-lock.json
+.vscode*
+.factorypath
+/swagger-api.json
