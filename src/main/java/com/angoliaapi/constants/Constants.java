@@ -10,6 +10,7 @@ public class Constants {
     public static final String MESSAGE = "message";
     public static final String SOMETHING_WRONG = "Something was wrong";
     public static final String RESPONSE_SUCCESSGULLY = "Api response successfully";
+    public static final String JAVA = "java";
 
     private Constants() { /*Empty*/ }
 

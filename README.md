@@ -1,68 +1,35 @@
 # README #
-
 This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
+The purpose of the following project is to make use of an external api provided by a url, in this case https://hn.algolia.com/api/v1/search_by_date?query=java, to obtain the information it must be used endpoint http://localhost:8080/api.
 
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+As an additional point, the http://localhost:8080/api endpoint was designed so that a query parameter can be added to search for other news, for example http://localhost:8080/api?query=phyton, otherwise add this parameter by default it will look for JAVA information
 
 ## Requirements:
 * OpenJDK 11 or greater
 * Maven 3.6 or greater
-* Npm 6.14.5 or greater
-* Docker version 18.03.1-ce
-
 
 ## Installing dependencies
 * Using maven (java): `mvn dependency:resolve`
-* Using npm (js): `npm install`
 
 ## How to run it during development:
 * Using maven: `mvn spring-boot:run`
-* Using maven (GUI refresh): `mvn frontend:webpack`
-* Using npm (GUI refresh): `npm run-script dev`
 
+## Quick setup:
+*Para usar la aplicación solo debe realizar una copia en su ordenador en local.
 
-### How do I get set up? ###
+*Configurar el campo url.to.get si desea cambiar la url que se desea consultar (ya viene por defecto con la dirección https://hn.algolia.com/api/v1/search_by_date)
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions### How to build the js:
-* Run (build with automatic file change detection): `npm run-script watch`
-* Run (build development): `npm run-script dev`
-* Run (build production): `npm run-script prod`
+*Luego en una consola dentro de la carpeta deberá correr el comando 
+`mvn dependency:resolve`
 
-## How to build and package this:
-* Run: `mvn package`
+*Y por último el comando `mvn spring-boot:run`
 
-## How to test
-* Using maven (java, js): `mvn test`
-* Using npm (js): `npm test`
+*Y ya estará todo listo para usar la api mediante la dirreción http://localhost:8080/api
 
-## How to get the coverage
-* Run: `mvn jacoco:report`
+*Recodatorio: puede usar un parámetro query (http://localhost:8080/api?query=phyton) para realizar búsquedas de otras noticias
 
-## How to run sonar
-* Run: `mvn sonar:sonar`
-
-## How to build and push the docker image
-* For building the docker image: `mvn docker:build`
-* For pushing the docker image: `mvn docker:push`
-
-**Note**: before run sonar, you need to have SonarQube installed in your environment or configure a remote SonarQube in the project properties.
 ### Some Dev references:
 
 * [Spring Data JPA](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)

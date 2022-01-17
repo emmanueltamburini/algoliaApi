@@ -43,7 +43,7 @@ public class AppController {
         int status = 500;
 
         try {
-            URL urlGet = UriComponentsBuilder.fromUriString(url).queryParam(QUERY, query).build().toUri().toURL();
+            URL urlGet = UriComponentsBuilder.fromUriString(url).queryParam(QUERY, query != null ? query : JAVA).build().toUri().toURL();
 
             logger.info("Calling to {} ...", url);
             HttpURLConnection con = (HttpURLConnection) urlGet.openConnection();
