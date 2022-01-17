@@ -17,18 +17,18 @@ As an additional point, the http://localhost:8080/api endpoint was designed so t
 * Using maven: `mvn spring-boot:run`
 
 ## Quick setup:
-*Para usar la aplicación solo debe realizar una copia en su ordenador en local.
+* Para usar la aplicación solo debe realizar una copia en su ordenador en local.
 
-*Configurar el campo url.to.get si desea cambiar la url que se desea consultar (ya viene por defecto con la dirección https://hn.algolia.com/api/v1/search_by_date)
+* Configurar el campo url.to.get si desea cambiar la url que se desea consultar (ya viene por defecto con la dirección https://hn.algolia.com/api/v1/search_by_date)
 
-*Luego en una consola dentro de la carpeta deberá correr el comando 
+* Luego en una consola dentro de la carpeta deberá correr el comando 
 `mvn dependency:resolve`
 
-*Y por último el comando `mvn spring-boot:run`
+* Y por último el comando `mvn spring-boot:run`
 
-*Y ya estará todo listo para usar la api mediante la dirreción http://localhost:8080/api
+* Y ya estará todo listo para usar la api mediante la dirreción http://localhost:8080/api
 
-*Recodatorio: puede usar un parámetro query (http://localhost:8080/api?query=phyton) para realizar búsquedas de otras noticias
+* Recodatorio: puede usar un parámetro query (http://localhost:8080/api?query=phyton) para realizar búsquedas de otras noticias
 
 ### Some Dev references:
 
